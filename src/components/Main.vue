@@ -334,7 +334,7 @@
           <div class="website-code-link">
             <p class="github-text">This project is built using Vue.js and Bootstrap Vue. Interested to see the source code?</p>
             <div class="button github-source-code">
-              <a href="" target="_blank">
+              <a href="https://github.com/Shubh0501/Website" target="_blank">
                 <p>See Project on Github</p>
               </a>
             </div>
