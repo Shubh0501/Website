@@ -143,188 +143,28 @@
 
             <div class="six columns skills-column">
                 <ul class="no-bullets">
-                  <li class="list-view">
-                    <span class="skill-name">Java</span>
+                  <li class="list-view" v-for="skill in skillsColumn1" :key="skill.name">
+                    <span class="skill-name">{{skill.name}}</span>
                     <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Python</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Javascript</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Android</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Vue.js</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">OOPS</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">GIT</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">XML</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">C++</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 1}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 2}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 3}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 4}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 5}">★</span>
                     </span>
                   </li>
                 </ul>
             </div>
             <div class="six columns skills-column">
                 <ul class="no-bullets">
-                  <li class="list-view">
-                    <span class="skill-name">HTML(5)</span>
+                  <li class="list-view" v-for="skill in skillsColumn2" :key="skill.name">
+                    <span class="skill-name">{{skill.name}}</span>
                     <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">CSS(3)</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">MySQL</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Firebase</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">PostgreSQL</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Operating Systems</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Machine Learning</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">Deep Learning</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                    </span>
-                  </li>
-                  <li class="list-view">
-                    <span class="skill-name">C</span>
-                    <span class="rating">
-                      <span class="star filled">★</span>
-                      <span class="star filled">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
-                      <span class="star">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 1}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 2}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 3}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 4}">★</span>
+                      <span class="star" :class="{filled : skill.rating >= 5}">★</span>
                     </span>
                   </li>
                 </ul>
@@ -545,7 +385,83 @@ export default {
   data () {
     return {
       activeClass: '',
-      navbarOpen: false
+      navbarOpen: false,
+      skillsColumn1: [
+        {
+          name: 'Java',
+          rating: 4
+        },
+        {
+          name: 'Python',
+          rating: 4
+        },
+        {
+          name: 'Javascript',
+          rating: 4
+        },
+        {
+          name: 'Android',
+          rating: 4
+        },
+        {
+          name: 'Vue.js',
+          rating: 4
+        },
+        {
+          name: 'OOPS',
+          rating: 4
+        },
+        {
+          name: 'GIT',
+          rating: 3
+        },
+        {
+          name: 'XML',
+          rating: 3
+        },
+        {
+          name: 'C++',
+          rating: 3
+        }
+      ],
+      skillsColumn2: [
+        {
+          name: 'HTML (5)',
+          rating: 3
+        },
+        {
+          name: 'CSS (3)',
+          rating: 3
+        },
+        {
+          name: 'MySQL',
+          rating: 3
+        },
+        {
+          name: 'Firebase',
+          rating: 3
+        },
+        {
+          name: 'PostgreSQL',
+          rating: 3
+        },
+        {
+          name: 'Operating Systems',
+          rating: 3
+        },
+        {
+          name: 'Machine Learning',
+          rating: 3
+        },
+        {
+          name: 'Deep Learning',
+          rating: 2
+        },
+        {
+          name: 'C',
+          rating: 2
+        }
+      ]
     }
   },
   methods: {
