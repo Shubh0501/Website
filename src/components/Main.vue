@@ -38,21 +38,21 @@
         <hr>
 
         <div class="row">
-          <div class="four columns about-me">
+          <div class="six columns about-me">
             <h2>About Me</h2>
             <p>
-              I am an Engineering Student pursuing Mathematics and Computing from Delhi Technological University(Formerly Delhi College of Engineering). I have exprience in Android Development, Web development using Vue and Machine Learning. I love structure and quality of the front-end and spend time fixing the little details on my projects. I like to work in groups as it helps me to learn a lot about new stuffs too.
+              I am a Software Engineer currently working as a Technology Consultant at PricewaterhouseCoopers Pvt. Ltd. I have completed my B.Tech from Delhi Technological University (Formerly Delhi College of Engineering). I have strong hands on experience in Android Development, Web Development and Data Analysis. I love to code and create things which can be useful for a large group of People. I like to work in groups as it helps me to learn a lot from others and also keeps me engaged for a longer period of time.
             </p>
 
           </div>
-          <div class="three columns profile-picture">
+          <div class="two columns profile-picture">
             <img class="picture" src="../assets/shubham_pasari.jpg" alt="Shubham Pasari" width="180" height="180">
           </div>
-          <div class="five columns details">
+          <div class="four columns details">
             <h3>Name:</h3>
             <p>Shubham Pasari</p>
             <h3>Age:</h3>
-            <p>23</p>
+            <p>24</p>
             <h3>Location</h3>
             <p>New Delhi</p>
             <div class="button" id="download-resume">
@@ -108,6 +108,17 @@
         <h1>Work Experience</h1>
         <hr>
         <div class="row">
+          <div class="three columns institution">
+            <h3><span>Pricewaterhouse Coopers Pvt. Ltd.</span></h3>
+            <h5>Gurugram</h5>
+            <h5>September 2020 - Current</h5>
+          </div>
+
+          <div class="seven columns institution-description">
+            <h4>Technology Consultant</h4>
+            <p>Manage the Entire Data pipeline for Client using Microsoft Azure Services, C#, Python, MySQL and PowerBI. Developed the website through which user can upload and process the data which is then stored in MySQL Database and created reports for PowerBI for Visualisation</p>
+          </div>
+
           <div class="three columns institution">
             <h3><span>Pudle</span></h3>
             <h5>Gurugram</h5>
@@ -422,6 +433,18 @@ export default {
         {
           name: 'C++',
           rating: 3
+        },
+        {
+          name: 'C#',
+          rating: 3
+        },
+        {
+          name: 'React',
+          rating: 4
+        },
+        {
+          name: 'AWS',
+          rating: 3
         }
       ],
       skillsColumn2: [
@@ -435,7 +458,7 @@ export default {
         },
         {
           name: 'MySQL',
-          rating: 3
+          rating: 4
         },
         {
           name: 'Firebase',
@@ -443,7 +466,7 @@ export default {
         },
         {
           name: 'PostgreSQL',
-          rating: 3
+          rating: 4
         },
         {
           name: 'Operating Systems',
@@ -460,6 +483,18 @@ export default {
         {
           name: 'C',
           rating: 2
+        },
+        {
+          name: 'PowerBI',
+          rating: 4
+        },
+        {
+          name: 'Redux',
+          rating: 4
+        },
+        {
+          name: 'Azure',
+          rating: 3
         }
       ]
     }
@@ -529,6 +564,7 @@ export default {
   * {
     display: block;
     overflow: hidden;
+    line-height: 1.5;
   }
 
   div.title {
@@ -572,6 +608,7 @@ export default {
     background-color: white;
     text-align: center;
     position: relative;
+    align-content: center;
   }
 
   .about h1, .education h1, .work h1, .skills h1, .projects h1 {
@@ -601,6 +638,7 @@ export default {
     color: darkslategray;
     padding: 10px 30px 10px 30px;
     text-align: justify;
+    line-height: 2;
   }
 
   .profile-picture {
@@ -808,6 +846,7 @@ export default {
     font-size: 30px;
     margin: 0;
     margin-top: 10px;
+    text-align: center;
   }
 
   .projects h3{
@@ -1123,7 +1162,11 @@ export default {
     * {
       box-sizing: border-box;
     }
-    .about, .education, .work, .projects, .contact {
+    .about {
+      width: 1500px;
+      margin: 0 auto;
+    }
+    .education, .work, .projects, .contact {
       width: 980px;
       margin: 0 auto;
     }

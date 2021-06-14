@@ -14,6 +14,11 @@ In case you want to run this project in your own system, you will need to instal
 npm install
 ```
 
+### Install Bootstrap Vue dependency
+```
+npm install --save bootstrap-vue
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
